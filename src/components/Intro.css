@@ -60,4 +60,35 @@
 .intro-right {
   display: flex;
   flex: 1;
+  position: relative;
+}
+
+.intro-right>* {
+  position: absolute;
+  z-index: 1;
+}
+
+.intro-right>:nth-child(1) {
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+
+.intro-right>:nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+
+.intro-right>:nth-child(3) {
+  transform: scale(1.4);
+  left: 28%;
+}
+
+.intro-right>:nth-child(4) {
+  transform: scale(0.6);
+  top: -22%;
+  left: -18%;
+  border-radius: 50%;
+  padding: 0;
 }
