@@ -1,0 +1,38 @@
+.service {
+  display: flex;
+  padding: 0 3rem 0 3rem;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+}
+
+.service-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.service-left>:nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.service-left>:nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.service-left>:nth-child(3) {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.service-btn {
+  height: 2rem;
+  width: 8rem;
+  margin-top: 1rem;
+}
