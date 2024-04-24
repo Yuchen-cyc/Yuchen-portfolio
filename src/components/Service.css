@@ -36,3 +36,11 @@
   width: 8rem;
   margin-top: 1rem;
 }
+
+.service-right {
+  position: relative;
+}
+
+.service-right>* {
+  position: absolute;
+}

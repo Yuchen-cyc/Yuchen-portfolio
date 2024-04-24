@@ -1,5 +1,7 @@
 import React from 'react'
 import './Service.css'
+import Card from './Card'
+import Heartemoji from '../img/heartemoji.png'
 
 export default function Service() {
   return (
@@ -17,7 +19,13 @@ export default function Service() {
       </div>
       {/* right side */}
       <div className="service-right">
-        I am the right side.
+        <div style={ {left: "14rem"} }>
+          <Card
+            emoji={Heartemoji}
+            heading='Design'
+            detail='Figma, UI/UX, Sketch, Photoshop, Adobe Suite'
+          />
+        </div>
       </div>
     </div>
   )
