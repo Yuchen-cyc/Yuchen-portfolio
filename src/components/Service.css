@@ -44,3 +44,14 @@
 .service-right>* {
   position: absolute;
 }
+
+/* blur */
+.service-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+.service-blur2 {
+  top: 8rem;
+  left: 14rem;
+}
