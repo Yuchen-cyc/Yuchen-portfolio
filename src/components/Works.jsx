@@ -45,8 +45,8 @@ export default function Works() {
           </div>
         </div>
         {/* background-circle */}
-        <div className="works-circle blueCircle"></div>
-        <div className="works-circle yellowCircle"></div>
+        <div className="works-backCircle blueCircle"></div>
+        <div className="works-backCircle yellowCircle"></div>
       </div>
     </div>
   )
