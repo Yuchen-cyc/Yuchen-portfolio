@@ -1,22 +1,26 @@
-import React from 'react'
-import './Intro.css'
-import FloatingDiv from './FloatingDiv'
-import Github from '../img/github.png'
-import Linkedin from '../img/linkedin.png'
-import Instagram from '../img/instagram.png'
-import Vector1 from '../img/Vector1.png'
-import Vector2 from '../img/Vector2.png'
-import Boy from '../img/boy.png'
-import Thumbup from '../img/thumbup.png'
-import Crown from '../img/crown.png'
-import glassesimoji from '../img/glassesimoji.png'
+import React, {useContext} from 'react';
+import './Intro.css';
+import FloatingDiv from './FloatingDiv';
+import Github from '../img/github.png';
+import Linkedin from '../img/linkedin.png';
+import Instagram from '../img/instagram.png';
+import Vector1 from '../img/Vector1.png';
+import Vector2 from '../img/Vector2.png';
+import Boy from '../img/boy.png';
+import Thumbup from '../img/thumbup.png';
+import Crown from '../img/crown.png';
+import glassesimoji from '../img/glassesimoji.png';
+import { themeContext } from "../Context";
 
 export default function Intro() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className='intro'>
       <div className="intro-left">
         <div className="intro-name">
-          <span> Hey! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}> Hey! I Am</span>
           <span>Yuchen CHEN</span>
           <span>I am a junior front-end developer with a background in communication.
             I love writing quality code and reading, can't wait to bring fresh ideas to you!

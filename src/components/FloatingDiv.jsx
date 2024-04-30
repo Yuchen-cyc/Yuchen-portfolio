@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './FloatingDiv.css'
+import { themeContext } from "../Context";
 
 export default function FloatingDiv({image, txt1, txt2}) {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='floatingdiv'>
       <img src={image} alt="" />
-      <span>
+      <span style={{ color: darkMode ? "black" : "" }}>
         {txt1}
         <br />
         {txt2}

@@ -1,17 +1,22 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './Service.css'
 import Card from './Card'
 import Heartemoji from '../img/heartemoji.png'
 import Glasses from '../img/glasses.png'
 import Humble from '../img/humble.png'
 import ResumeCYC from './resumeCYC.pdf'
+import { themeContext } from "../Context";
 
 export default function Service() {
+  // context
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className='service'>
       {/* right side */}
       <div className="service-left">
-        <span>My Awesome</span>
+        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>Services</span>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           <br />
