@@ -41,3 +41,8 @@ textarea {
 .contact-btn {
   width: 6rem;
 }
+
+.form-confirmation {
+  font-size: 16px;
+  color: var(--orange);
+}
