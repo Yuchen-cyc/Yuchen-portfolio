@@ -11,10 +11,13 @@ import Thumbup from '../img/thumbup.png';
 import Crown from '../img/crown.png';
 import glassesimoji from '../img/glassesimoji.png';
 import { themeContext } from "../Context";
+// import { motion } from 'framer-motion'
 
 export default function Intro() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  // const transition = {duration: 2, type: 'spring'};
 
   return (
     <div className='intro'>
@@ -43,7 +46,21 @@ export default function Intro() {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={Boy} alt="" />
-        <img src={glassesimoji} alt="" />
+        <img
+          // initial={{ left: "-36%" }}
+          // whileInView={{ left: "-24%" }}
+          // transition={transition}
+          src={glassesimoji}
+          alt=""
+        />
+        {/* <motion.div
+        initial={{ top: "-4%", left: "74%" }}
+        whileInView={{ left: "68%" }}
+        transition={transition}
+        className="floating-div"
+        >
+          <FloatingDiv image={Crown} txt1='Web' txt2='Developer'/>
+        </motion.div> */}
         <div style={{top: '-4%', left: '58%'}}>
           <FloatingDiv image={Crown} txt1='Web' txt2='Developer'/>
         </div>

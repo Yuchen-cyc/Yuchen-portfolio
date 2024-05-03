@@ -36,7 +36,7 @@ export default function Testimonial() {
 
   return (
 
-    <div className='testimonial-wrapper'>
+    <div className='testimonial-wrapper' id='Testimonial'>
       <div className="testi-heading">
         <span>Clients always get</span>
         <span> Exceptional Work</span>

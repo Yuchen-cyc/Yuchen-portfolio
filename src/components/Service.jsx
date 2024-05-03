@@ -13,7 +13,7 @@ export default function Service() {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className='service'>
+    <div className='service' id='Services'>
       {/* right side */}
       <div className="service-left">
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
